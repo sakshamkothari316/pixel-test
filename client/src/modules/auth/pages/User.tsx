@@ -1,4 +1,4 @@
-import { use, useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import styles from "../styles/User.module.css";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { TAppDispatch, TRootState } from "../../../redux/store";
