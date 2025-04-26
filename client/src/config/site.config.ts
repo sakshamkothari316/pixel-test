@@ -1,4 +1,4 @@
 export const SERVER_CONFIG = {
-  development: "http://localhost:5678/api/v1",
+  development: "https://pixel-test-9g51.onrender.com/api/v1",
   production: "",
 };
