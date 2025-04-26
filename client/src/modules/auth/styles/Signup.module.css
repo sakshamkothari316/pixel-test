@@ -1,0 +1,187 @@
+/* main_container */
+.main_container {
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* signup_card */
+.signup_card {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  background-color: var(--background);
+}
+
+.signup_card .signup_card__img {
+  position: relative;
+  flex: 1;
+  min-width: 640px;
+}
+.signup_card .signup_card__img img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+.signup_card .signup_card__img .img_mask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: linear-gradient(to bottom right, transparent, black);
+}
+
+/* signup_card__content */
+.signup_card .signup_card__content {
+  position: relative;
+  flex: 1;
+  padding: 2.5rem 10rem 2.5rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: auto;
+}
+.content_title p {
+  margin: 0px;
+  font-weight: 500;
+}
+.content_title :nth-child(1) {
+  font-size: 1.5rem;
+}
+.content_title :nth-child(2) {
+  font-size: 0.9rem;
+  line-height: 20px;
+  color: var(--tertiary);
+}
+
+.content_elements {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content_elements :nth-child(1) {
+  width: 100%;
+}
+.content_elements :nth-child(2) {
+  width: 100%;
+}
+.content_agreement {
+  display: flex;
+  gap: 10px;
+}
+.content_agreement input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  border: 1px solid white;
+  outline: none;
+}
+.content_agreement p {
+  margin: 0px;
+  font-size: 13px;
+  flex: 1;
+  line-height: 22px;
+}
+.content_agreement p span {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+.content_action_btn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.content_action_btn__login {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 20px;
+}
+.content_action_btn__login :nth-child(1) {
+  color: var(--tertiary);
+  cursor: pointer;
+}
+.content_action_btn__login :nth-child(2) {
+  cursor: pointer;
+  color: var(--secondary);
+}
+
+/* 1024px for small laptop screens*/
+@media (max-width: 1024px) {
+  .signup_card .signup_card__img {
+    min-width: 450px;
+  }
+  .signup_card .signup_card__content {
+    padding: 2.5rem 4rem 2rem 3rem;
+  }
+}
+
+/* 768px for tablet */
+@media (max-width: 769px) {
+  .signup_card .signup_card__img {
+    display: none;
+  }
+  .signup_card .signup_card__content {
+    padding: 3rem 4rem 2rem 3rem;
+  }
+}
+/* 425px and below for mobile screens */
+@media (max-width: 426px) {
+  .main_container {
+    padding: 2rem;
+  }
+  .signup_card {
+    display: flex;
+  }
+
+  .signup_card .signup_card__img {
+    display: none;
+  }
+  .signup_card .signup_card__content {
+    padding: 3rem 2rem;
+  }
+  .content_agreement__checkbox {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+}
+@media (max-width: 376px) {
+  .content_title :nth-child(1) {
+    font-size: 2rem;
+  }
+  .content_title p {
+    text-align: center;
+  }
+  .content_action_btn__login {
+    text-align: center;
+  }
+  .content_img {
+    display: none;
+  }
+  .signup_card .signup_card__content {
+    padding: 4.5rem 1rem;
+  }
+}
+@media (max-width: 321px) {
+  .content_title :nth-child(1) {
+    font-size: 1.5rem;
+  }
+  .content_title p {
+    text-align: center;
+  }
+  .content_action_btn__login {
+    text-align: center;
+  }
+  .content_img {
+    display: none;
+  }
+  .signup_card .signup_card__content {
+    padding: 3.5rem 1rem;
+  }
+}

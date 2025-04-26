@@ -1,0 +1,43 @@
+.main_container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.main_container p {
+  margin: 0px;
+}
+
+.user__title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.user__sub_title {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.user__table {
+  width: 80%;
+  border-collapse: collapse;
+  overflow-y: auto;
+}
+.user__table table {
+  width: 100%;
+  border: 1px solid black;
+}
+.user__table table td,
+th {
+  text-align: center;
+  border: 1px solid black;
+}
+.user__table table th {
+  cursor: pointer;
+}
